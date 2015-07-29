@@ -1,0 +1,93 @@
+SplineFontDB: 3.0
+FontName: Logo
+FullName: Logo
+FamilyName: Logo
+Weight: Medium
+Copyright: Created by Chris McCormick, with FontForge 2.0 (http://fontforge.sf.net)
+UComments: "2013-10-8: Created." 
+Version: 001.000
+ItalicAngle: 0
+UnderlinePosition: -99.6094
+UnderlineWidth: 0
+Ascent: 800
+Descent: 200
+LayerCount: 2
+Layer: 0 0 "Back"  1
+Layer: 1 0 "Fore"  0
+XUID: [1021 296 654048776 8795901]
+FSType: 0
+OS2Version: 0
+OS2_WeightWidthSlopeOnly: 0
+OS2_UseTypoMetrics: 1
+CreationTime: 1381214705
+ModificationTime: 1381216365
+OS2TypoAscent: 0
+OS2TypoAOffset: 1
+OS2TypoDescent: 0
+OS2TypoDOffset: 1
+OS2TypoLinegap: 90
+OS2WinAscent: 0
+OS2WinAOffset: 1
+OS2WinDescent: 0
+OS2WinDOffset: 1
+HheadAscent: 0
+HheadAOffset: 1
+HheadDescent: 0
+HheadDOffset: 1
+MarkAttachClasses: 1
+DEI: 91125
+Encoding: Custom
+UnicodeInterp: none
+NameList: Adobe Glyph List
+DisplaySize: -24
+AntiAlias: 1
+FitToEm: 1
+WinInfo: 0 43 12
+BeginPrivate: 0
+EndPrivate
+BeginChars: 257 1
+
+StartChar: heart
+Encoding: 256 9829 0
+Width: 699
+Flags: W
+HStem: 0 21G<333 417> 167 166<500 583> 250 167<83 167 583.332 667> 417 83<500 583>
+VStem: 167 166<417 500> 333 84<0 83> 417 166.127<417 500> 583 84<333 416.666>
+LayerCount: 2
+Fore
+SplineSet
+333 0 m 25xc5
+ 333 83 l 25xc5
+ 250 83 l 25
+ 250 167 l 25
+ 167 167 l 25xc8
+ 167 250 l 25
+ 83 250 l 25
+ 83 417 l 25
+ 167 417 l 25xa8
+ 167 500 l 25
+ 334 502 l 25
+ 333 417 l 25
+ 417 417 l 25
+ 417 500 l 25x9a
+ 583 500 l 17x91
+ 583 475.397 583.127 416.929 583.127 416.842 c 5x92
+ 500 417 l 1
+ 500 333 l 1
+ 583 333 l 1xd1
+ 583.332 416.666 l 9
+ 667 417 l 25
+ 667 250 l 25
+ 583 250 l 25xa1
+ 583 167 l 25
+ 500 167 l 25
+ 500 83 l 25
+ 417 83 l 25
+ 417 0 l 25
+ 333 0 l 25xc5
+EndSplineSet
+Validated: 1
+Comment: "logo" 
+EndChar
+EndChars
+EndSplineFont

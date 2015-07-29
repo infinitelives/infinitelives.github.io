@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'infinitelivesLogo'; 
+	src: url('infinitelivesLogo.eot');
+	src: url('infinitelivesLogo.eot?#iefix') format('embedded-opentype'),
+	url('infinitelivesLogo.ttf') format('truetype'),
+	url("infinitelivesLogo.svg#Logo") format("svg");
+}
+
