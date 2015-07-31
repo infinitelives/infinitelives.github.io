@@ -3,6 +3,11 @@
 	font-weight: 300;
 }
 
+html {
+  width: 100%;
+  height: 100%;
+}
+
 h1, h2, h3, h3 a {
 	font-family: "Audiowide";
 	font-weight: bold;
@@ -13,10 +18,10 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 1024px;
-	padding-top: 0.5em;
 	background: #1a1a1a;
 	color: #efefef;
 	background-image: url("../img/debut_dark.png");
+	height: 100%;
 }
 
 img {
@@ -30,7 +35,6 @@ img {
 }
 
 p {
-	margin-left: 2%;
 	color: #e0e0e0;
 }
 
@@ -71,8 +75,10 @@ a:hover {
 	max-width: 95%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 4em;
 	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 #top a:hover {
@@ -84,12 +90,20 @@ a:hover {
 	margin-top: 2em;
 }
 
+.fa-github.icon {
+  margin-top: 1em;
+}
+
 #main {
 	background-color: rgba(255, 255, 255, 0.1);
 	padding: 0.5em 1em;
 	border: 1px solid #666;
 	margin-top: 2em;
 	padding-top: 1em;
+}
+
+.icon {
+  font-size: 2em !important;
 }
 
 #logo {
@@ -106,58 +120,14 @@ a:hover {
 
 #logo-container .logo-icon {
 	font-family: infinitelivesLogo;
-	font-size: 2em;
 	text-shadow: -1px 0 #333, 0 1px #333, 1px 0 #333, 0 -1px #333, 0px 0px 10px #f84;
-	margin-right: 0.1em;
+	display: block;
+	margin-left: -0.1em;
 }
 
 #logo-container #logotext {
 	color: white;
 	font-family: "Audiowide";
-}
-
-#main.blog h3 {
-	border-bottom: 1px solid #555;
-}
-
-#main.blog .date {
-	float:right;
-}
-
-span#demos {
-	display: block;
-	width: 100%;
-	text-align: center;
-}
-
-span#demos a:hover img {
-	border: 1px solid #f60;
-}
-
-span#demos a img {
-	display: inline;
-}
-
-div#examplesmenu {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-}
-
-iframe.demo {
-	border: 1px solid white;
-	margin-left: auto;
-	margin-right: auto;
-	max-height: 600px;
-	max-width: 800px;
-	width: 100%;
-	height: 100%;
-	min-height: 400px;
-	display: block;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	border-radius: 2px;
-	background-color: white;
 }
 
 div#menu {
@@ -172,24 +142,4 @@ div#menu a {
 
 div#menu a {
 	font-size: 1.2em;
-}
-
-div#version {
-	float: right;
-}
-
-div#download {
-	font-size: 1.5em;
-	text-align: right;
-}
-
-div#download a {
-	font-family: "Audiowide";
-}
-
-a#download-link {
-}
-
-a#download-link:hover {
-
 }
