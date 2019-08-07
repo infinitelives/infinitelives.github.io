@@ -1,6 +1,7 @@
 * {
 	font-family: "Hammersmith One";
 	font-weight: 300;
+	box-model: border-box;
 }
 
 html {
@@ -11,6 +12,7 @@ html {
 h1, h2, h3, h3 a {
 	font-family: "Audiowide";
 	font-weight: bold;
+	color: white;
 }
 
 body {
@@ -20,7 +22,9 @@ body {
 	max-width: 1024px;
 	background: #1a1a1a;
 	color: #efefef;
-	background-image: url("../img/debut_dark.png");
+	background-image: url("../img/banner.png");
+	background-size: cover;
+        background-position: center;
 	height: 100%;
 }
 
@@ -35,7 +39,8 @@ img {
 }
 
 p {
-	color: #e0e0e0;
+	color: #333333;
+
 }
 
 blockquote p {
@@ -62,16 +67,20 @@ code, code * {
 	font-weight: 500;
 }
 
-a {
+span.logo {
 	color: #f60;
 	text-decoration: none;
+}
+
+a {
+  color: #f60;
 }
 
 a:hover {
 	text-decoration: underline;
 }
 
-#top {
+body {
 	max-width: 95%;
 	margin-left: auto;
 	margin-right: auto;
@@ -87,7 +96,14 @@ a:hover {
 }
 
 #top p {
-	margin-top: 2em;
+	margin: 0px;
+	padding: 0px;
+}
+
+#bottom {
+  position: absolute;
+  bottom: 1.5em;
+  width: 100%;
 }
 
 .fa-github.icon {
@@ -120,7 +136,6 @@ a:hover {
 
 #logo-container .logo-icon {
 	font-family: infinitelivesLogo;
-	text-shadow: -1px 0 #333, 0 1px #333, 1px 0 #333, 0 -1px #333, 0px 0px 10px #f84;
 	display: block;
 	margin-left: -0.1em;
 }
@@ -128,11 +143,12 @@ a:hover {
 #logo-container #logotext {
 	color: white;
 	font-family: "Audiowide";
+	font-size: 1.5em;
 }
 
 div#menu {
 	margin-right: 1em;
-	margin-top: 1em;
+	margin-top: 0px;
 	margin-left: 1em;
 	text-align: center;
 }
@@ -142,4 +158,91 @@ div#menu a {
 
 div#menu a {
 	font-size: 1.2em;
+	margin: 0px 1em;
 }
+
+div#menu a:hover {
+  color: #333;
+}
+
+/*** signup form styling ***/
+
+.tinysignup input, .tinysignup button {
+  border: 2px solid #aaa;
+  background: none;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.tinysignup button {
+  width: 7em;
+  background-color: #6f0;
+  border-color: #6f0;
+  margin-left: 0.5em;
+  cursor: pointer;
+}
+
+.tinysignup .message.top {
+  color: #f60;
+  padding: 1em;
+  margin: 0px;
+  font-size: 2em;
+}
+
+.tinysignup .message {
+  color: #333;
+}
+
+.tinysignup .spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #6f0;
+  border-radius: 5px;
+
+  margin: 40px auto;
+  -webkit-animation: tinysignup-rotateplane 1.2s infinite ease-in-out;
+  animation: tinysignup-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes tinysignup-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes tinysignup-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+/*** phones and stuff ***/
+
+@media only screen and (max-device-width: 480px) {
+  #logo-container {
+    font-size: 1.5em;
+  }
+
+  .tinysignup input {
+    max-width: 80%;
+    margin: 0px;
+    margin: 1em auto;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .tinysignup button {
+    margin: 1em auto;
+    max-width: 20%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+}
+
